@@ -186,6 +186,34 @@
             border-top: 1px solid #333;
             color: #888;
         }
+  /* 响应式适配 - 手机端优化 */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .banner {
+                height: 400px;
+                text-align: center;
+            }
+            .banner h1 {
+                font-size: 32px;
+            }
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            .advantages-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .factory-gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .footer-inner {
+                grid-template-columns: 1fr;
+            }
     </style>
 </head>
 <body>
